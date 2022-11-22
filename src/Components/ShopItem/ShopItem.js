@@ -1,22 +1,16 @@
 import React from 'react'
 
-const ShopItem = ({title, boolean}) => {
+const ShopItem = ({title, inStock}) => {
 
-    const shoppingCart = (boolean === "true") ? "add to shopping cart" : "Order Product"
-    // const button = document.querySelector(`button`)
-    // if(button){
-    //     button.addEventListener("click", () => {
-            
-    //     })
-    // }
-   
+    const shoppingCart = (inStock === true) ? "add to shopping cart" : "Order Product"
+    const inStockP = (inStock === true) ? "In Stock" : "Out Stock"
+  
   return (
-    <fieldset>
-        <legend>ShopItem</legend>
+    <div>
         <h2 className="title">The Item: {title}</h2>
-        <p className="in-stock">In Stock: {boolean}</p>
+        <p className="in-stock">{inStockP}</p>
         <button>{shoppingCart}</button>
-    </fieldset>
+    </div>
   )
 }
 export default ShopItem

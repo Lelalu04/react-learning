@@ -1,61 +1,35 @@
-import { renderArray } from "../Components/Function";
-import { Item } from "../Components/Class/Item";
+import RenderPage from "../Components/RenderPage"
 const ShoppingList = () => {
     
-    const apple = new Item("Apple", true, `fruits`);
-    const orange = new Item("Orange", false, `fruits`);
-    const watermelon = new Item("Watermelon", true, `fruits`);
-    const pear = new Item("Pear", true, `fruits`);
-    const banana = new Item("Banana", false, `fruits`);
-    // let array = [
-    //     {
-    //         title: "Apple",
-    //         boolean: true,
-    //         category: `fruits`
-    //     },
-    //     {
-    //         title: "Orange",
-    //         boolean: false,
-    //         category: `fruits`
-    //     },
-    //     {
-    //         title: "Watermelon",
-    //         boolean: true,
-    //         category: `fruits`
-    //     },
-    //     {
-    //         title: "Pear",
-    //         boolean: true,
-    //         category: `fruits`
-    //     },
-    //     {
-    //         title: "Banana",
-    //         boolean: false,
-    //         category: `fruits`
-    //     }
-    // ]
     let array = [
         {
-            ...apple
+            title: "Apple",
+            inStock: true,
+            category: `fruits`
         },
         {
-            ...orange
+            title: "Orange",
+            inStock: false,
+            category: `fruits`
         },
         {
-            ...watermelon
+            title: "Watermelon",
+            inStock: true,
+            category: `fruits`
         },
         {
-            ...pear
+            title: "Pear",
+            inStock: true,
+            category: `fruits`
         },
         {
-            ...banana
+            title: "Banana",
+            inStock: false,
+            category: `fruits`
         }
     ]
     return (
-        <>
-            <h1>Shopping List</h1>
-            {renderArray(array)}
-        </>
+        <RenderPage array={array} title="Shopping List"/>
     )
 }
 export default ShoppingList
