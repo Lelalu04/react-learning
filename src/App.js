@@ -3,6 +3,8 @@ import ShoppingList from './Pages/ShoppingList';
 import Header from "./Components/Header/Header"
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
+import CreateItem from './Pages/CreateItem';
+import ElectronicList from './Pages/ElectronicList';
 function App() {
   return (
     <>
@@ -10,7 +12,9 @@ function App() {
     <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/ShoppingList" element={<ShoppingList/>}/>
-    {/* <Route path="/*" element={<h1>404</h1>}/> */}
+    <Route path="/ElectronicList" element={<ElectronicList/>}/>
+    <Route path="/CreateItem" element={<CreateItem/>}/>
+    
     </Routes>
     </>
   );
