@@ -11,7 +11,7 @@ const ElectronicList = () => {
     let array = [phone,television,computer,homeCinema,monitor]
 
   return (
-    <RenderPage array={array} title="Shopping List"/>
+    <RenderPage array={array} title="Electronic List"/>
   )
 }
 export default ElectronicList
