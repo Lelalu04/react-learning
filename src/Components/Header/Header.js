@@ -11,6 +11,8 @@ const Header = () => {
                 <li><Link to="/Cars">Cars List</Link></li>
                 <li><Link to="/Cities">Cities List</Link></li>
                 <li><Link to="/CreateCar">Create Car</Link></li>
+                <li><Link to="/Task">Task</Link></li>
+                <li><Link to="/Counter">Counter</Link></li>
             </ul>
         </div>
     )

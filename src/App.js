@@ -8,6 +8,9 @@ import ElectronicList from './Pages/ElectronicList';
 import Cars from './Pages/Cars';
 import Cities from './Pages/Cities'
 import CreateCar from './Pages/CreateCar';
+import Task from './Pages/Task';
+import Counter from './Pages/Counter';
+import Testas1 from './Pages/Testas1';
 function App() {
   return (
     <>
@@ -20,6 +23,9 @@ function App() {
     <Route path="/Cars" element={<Cars/>}/>
     <Route path="/Cities" element={<Cities/>}/>
     <Route path="/CreateCar" element={<CreateCar/>}/>
+    <Route path="/Task" element={<Task/>}/>
+    <Route path="/Counter" element={<Counter/>}/>
+    <Route path="/Testas1" element={<Testas1/>}/>
     
     </Routes>
     </>

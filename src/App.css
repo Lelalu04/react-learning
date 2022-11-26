@@ -12,3 +12,11 @@
 .last{ 
   width: 100%;
 }
+.li-item {
+  cursor: default;
+}
+
+.li-item.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

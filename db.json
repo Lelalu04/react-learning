@@ -89,6 +89,123 @@
       "color": "silver",
       "imageLink": "https://i.pinimg.com/originals/c5/9d/eb/c59deb6885b9d14dfe8b5c41ab924ac8.jpg",
       "id": 9
+    },
+    {
+      "brand": "eytrt",
+      "model": "yerty",
+      "engine": "eytr",
+      "basePrice": "etry",
+      "mileage": "yrety",
+      "color": "yerty",
+      "imageLink": "ety",
+      "id": 10
+    }
+  ],
+  "citiesData": [
+    {
+      "name": "Jonava",
+      "population": 26853,
+      "location": {
+        "continent": "Europe",
+        "country": "Lietuva"
+      },
+      "touristAttractions": [],
+      "isCapital": false
+    },
+    {
+      "name": "Kaunas",
+      "population": 295269,
+      "location": {
+        "continent": "Europe",
+        "country": "Lietuva"
+      },
+      "touristAttractions": [
+        "Art Deco muziejus"
+      ],
+      "isCapital": false
+    },
+    {
+      "name": "Vilnius",
+      "population": 544386,
+      "location": {
+        "continent": "Europe",
+        "country": "Lietuva"
+      },
+      "touristAttractions": [
+        "Gedimino pilies bokštas",
+        "Stiklo kvartalas",
+        "MO muziejus"
+      ],
+      "isCapital": true
+    },
+    {
+      "name": "West Sussex",
+      "location": {
+        "continent": "Europe",
+        "country": "England"
+      },
+      "touristAttractions": [
+        "The Seven Sisters",
+        "National Trust",
+        "National Trust - Petworth House and Park"
+      ],
+      "isCapital": false
+    },
+    {
+      "name": "Kazkas",
+      "population": 5443861,
+      "location": {
+        "continent": "Europe",
+        "country": "Lietuva"
+      },
+      "touristAttractions": [
+        "lankitinas1",
+        "lankitinas12",
+        "lankitinas15"
+      ],
+      "isCapital": true
+    },
+    {
+      "name": "Vilnius",
+      "population": 544386,
+      "location": {
+        "country": "Lietuva"
+      },
+      "isCapital": true
+    }
+  ],
+  "fruit": [
+    {
+      "title": "Apple",
+      "inStock": true,
+      "category": "fruits"
+    },
+    {
+      "title": "Orange",
+      "inStock": false,
+      "category": "fruits"
+    },
+    {
+      "title": "Watermelon",
+      "inStock": true,
+      "category": "fruits"
+    },
+    {
+      "title": "Pear",
+      "inStock": true,
+      "category": "fruits"
+    },
+    {
+      "title": "Banana",
+      "inStock": false,
+      "category": "fruits"
+    }
+  ],
+  "taskData": [
+    {
+      "title": "jtyej",
+      "done": false,
+      "id": 4
     }
   ]
 }

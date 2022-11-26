@@ -1,11 +1,11 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import CarsItem from '../Components/CarsItem'
 
 
 const Cars = () => {
 
     function renderArray(arr) {
-        if(carsData){
+        if (carsData) {
             console.log(carsData)
             if (arr.length === 0) {
                 return <p>„Your shopping list is empty."</p>
@@ -16,24 +16,42 @@ const Cars = () => {
             return items;
         }
     }
-    const[carsData, carsDataChange] = useState(null)
+
+    const [carsData, carsDataChange] = useState(null)
+    // pirmas varijantas
     useEffect(() => {
+
         fetch("http://localhost:8000/carsData").then((res) => {
-          return res.json()
+            return res.json()
         }).then((resp) => {
             carsDataChange(resp)
 
         }).catch((err) => {
-          console.log(err.message)
+            console.log(err.message)
         })
-      }, [])
-      
-      return (
-          <div className="cars">
-        <h1>Car List</h1>
-        {renderArray(carsData)}
-    </div>
-)
+    }, [])
+    //----------------------------------
+
+    // antras varijantas
+    useEffect(() => {
+        // kadangi negali buti async irasyta i useEffect turi iskelti i funkcija
+        getData()
+    }, [])
+
+    async function getData() {
+        const res = await fetch("http://localhost:8000/carsData");
+        const data = await res.json()
+        carsDataChange(data)
+    }
+    //----------------------------------
+    console.log(carsData)
+
+    return (
+        <div className="cars">
+            <h1>Car List</h1>
+            {renderArray(carsData)}
+        </div>
+    )
 }
 
 export default Cars

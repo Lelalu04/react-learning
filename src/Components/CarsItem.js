@@ -10,7 +10,7 @@ const CarsItem = ({brand,model,engine,basePrice,mileage,color,imageLink}) => {
     const cheakImageLink = imageLink && <img alt='' src={imageLink}></img>
 
     const afterClick = () => {
-        alert("hi")
+        alert(cheakModel)
     }
     return (
     <div className="car-item">

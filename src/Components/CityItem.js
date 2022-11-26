@@ -6,7 +6,11 @@ const CityItem = ({ data,even, lastCount }) => {
     const checkPopulation = population ? population : "Not population information"
     const checkContinent = location.continent ? location.continent : "Not continent information"
     const checkCountry = location.country ? location.country : "Not country information"
-    const checkTouristAttractions = (touristAttractions <= 0 || !touristAttractions) ? <p>Not tourist attractions information.</p> : <><p>{(touristAttractions.length === 1) ? `Main Tourist attraction of ${location.country} is:` : `Main Tourist attractions of ${location.country} are:` }</p><ul>{touristAttractions.map((turis, index) => {
+    const checkTouristAttractions = (touristAttractions <= 0 || !touristAttractions) 
+    ? <p>Not tourist attractions information.</p> 
+    : <><p>{(touristAttractions.length === 1) 
+        ? `Main Tourist attraction of ${location.country} is:` 
+        : `Main Tourist attractions of ${location.country} are:` }</p><ul>{touristAttractions.map((turis, index) => {
         return <li key={index}>{turis}</li>
     })}</ul></>
     
